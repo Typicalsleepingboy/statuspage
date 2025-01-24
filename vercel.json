@@ -1,0 +1,14 @@
+{
+    "routes": [
+      {
+        "source": "/logs/:filename",
+        "destination": "/logs/:filename"
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "/logs/:filename",
+        "destination": "/logs/:filename"
+      }
+    ]
+  }
