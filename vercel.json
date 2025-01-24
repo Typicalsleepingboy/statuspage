@@ -1,24 +1,26 @@
 {
     "headers": [
-      {
-        "source": "/logs/:filename",
-        "headers": [
-          {
-            "key": "Content-Type",
-            "value": "text/plain"
-          },
-          {
-            "key": "Cache-Control",
-            "value": "public, max-age=60, must-revalidate"
-          }
-        ]
-      }
+        {
+            "source": "/logs/:filename",
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "text/plain"
+                },
+                {
+                    "key": "Cache-Control",
+                    "value": "public, max-age=60, must-revalidate"
+                }
+            ]
+        }
     ],
     "rewrites": [
-      {
-        "source": "/logs/:filename",
-        "destination": "/logs/:filename"
-      }
-    ]
-  }
-  
+        {
+            "source": "/logs/:filename",
+            "destination": "/logs/:filename"
+        }
+    ],
+    "static": {
+        "directory": "logs"
+    }
+}
