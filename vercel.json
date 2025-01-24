@@ -1,10 +1,4 @@
 {
-    "routes": [
-      {
-        "source": "/logs/:filename",
-        "destination": "/logs/:filename"
-      }
-    ],
     "headers": [
       {
         "source": "/logs/:filename",
@@ -27,3 +21,4 @@
       }
     ]
   }
+  
